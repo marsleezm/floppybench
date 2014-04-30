@@ -1,0 +1,8 @@
+How to run
+1. Start floppystore
+2. Execute this step to insert data into floppystore. This step can be ignored, but it seems to improve the throughtput.
+	 ./bin/ycsb load floppystore -P workloads/myworkload -s > load.dat
+3. Execute this step to do update and read benchmark.
+	./bin/ycsb run floppystore -P workloads/myworkload -s > execute.dat
+
+For more information check the official guide of YCSB. https://github.com/brianfrankcooper/YCSB/wiki/Running-a-Workload

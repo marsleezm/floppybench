@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/liz/Documents/MyDocument/repositories/floppybench/lib/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/Users/liz/Documents/MyDocument/repositories/floppybench/lib/OtpErlang.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
