@@ -23,8 +23,8 @@
 #   Request distribution: zipfian
 
 recordcount=10000
-operationcount=10000
-db=floppystore.application.ycsb.FloppyClient
+operationcount=100000
+db=floppystore.application.ycsb.ClocksiClient
 workload=com.yahoo.ycsb.workloads.CoreWorkload
 
 readallfields=true
