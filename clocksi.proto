@@ -1,0 +1,53 @@
+// Java package specifiers
+option java_package = "clocksi.application.ycsb";
+option java_outer_classname = "ClocksiPB";
+
+
+// Start Tx request
+message FpbStartTxReq {
+    optional bytes time = 1 [default = "0"];
+}
+
+// Start Tx response
+message FpbStartTxResp {
+    required TxId txid = 1;
+}
+
+
+// Update request
+message FpbUpdateReq {
+    required TxId txid  = 1;
+    required bytes key = 2;
+    required bytes value = 3;
+}
+
+// Update response
+message FpbUpdateResp {
+    required bytes result = 1;
+}
+
+// Read request
+message FpbReadReq {
+    required TxId txid = 1;
+    required bytes key = 2;
+}
+
+// Read response
+message FpbReadResp {
+    required bytes result = 1;
+}
+
+// Commit Tx request
+message FpbCommitTxReq {
+    required TxId txid = 1;
+}
+
+// Commit Tx response
+message FpbCommitTxResp {
+    required bytes result = 1;
+}
+
+message TxId {
+    required int32 uuid = 1;
+    required bytes pid = 2;
+}
